@@ -26,7 +26,12 @@ public class MultiplicationTable {
     }
 
     public String generateLine(int start, int row) {
-        return null;
+        String str = "";
+        for (int i = start; i <= row; i++) {
+            str += "  ";
+            str += generateSingleExpression(i, row);
+        }
+        return str.substring(2);
     }
 
     public String generateSingleExpression(int multiplicand, int multiplier) {
