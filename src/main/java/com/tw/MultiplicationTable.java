@@ -10,15 +10,11 @@ public class MultiplicationTable {
     }
 
     public Boolean isInRange(int number) {
-        if (number >= 1 && number <= 1000)
-            return true;
-        return false;
+        return number >= 1 && number <= 1000;
     }
 
     public Boolean isStartNotBiggerThanEnd(int start, int end) {
-        if (start > end)
-            return false;
-        return true;
+        return start <= end;
     }
 
     public String generateTable(int start, int end) {
